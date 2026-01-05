@@ -1,20 +1,12 @@
-<!-- Content template for the home page -->
+<!-- Content template for the project page -->
 <script>
   let { data } = $props();
   let activeTab = $state('client');
 </script>
 
-<h1 class="mb-6 text-2xl font-semibold tracking-tighter">Hi, Yusuf here 👌</h1>
-<p class="mb-8">
-  I am a Software Engineer based in Indonesia and a recent graduate of Universitas Semarang with a
-  strong foundation in web development, data engineering, and cloud computing. I have experience
-  building scalable web applications and automated data pipelines using Python, modern web
-  frameworks, containerization, and cloud platforms. I enjoy working on end-to-end solutions, from
-  application development to data processing and deployment.
-</p>
+<h1 class="mb-8 text-2xl font-semibold tracking-tighter">Projects</h1>
 
-<!-- Project Section -->
-<div id="project" class="mb-16">
+<div class="mb-16">
   <div class="flex items-center space-x-6 mb-8">
     <button
       class="text-xl font-medium tracking-tight transition-colors {activeTab === 'client'
@@ -137,28 +129,5 @@
         </div>
       {/each}
     {/if}
-  </div>
-
-  <div class="mt-12">
-    <a
-      href="/project"
-      class="inline-flex items-center text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors"
-    >
-      View More Projects
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="ml-1"
-        ><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"
-        ></polyline></svg
-      >
-    </a>
   </div>
 </div>
