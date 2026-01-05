@@ -1,3 +1,4 @@
+<!-- Individual blog post display template -->
 <script>
   let { data } = $props();
 </script>

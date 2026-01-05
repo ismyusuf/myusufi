@@ -1,22 +1,23 @@
-# SvelteKit
+# Portfolio Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).
+A personal website and blog built with SvelteKit, Tailwind CSS 4, and MDX.
 
-## Deploy Your Own
+## Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-description=A%20SvelteKit%20app%20optimized%20Edge-first.&demo-url=https%3A%2F%2Fsveltekit-template.vercel.app%2F)
-
-_Live Example: https://sveltekit-template.vercel.app_
+- **MDX-powered Blog**: Write blog posts using Markdown with component support.
+- **Responsive Design**: Styled with the latest Tailwind CSS 4.
+- **About Page**: Dedicated section for personal information.
+- **Vercel Deployment**: Optimized for deployment on Vercel.
 
 ## Developing
 
-Once you've installed dependencies with `pnpm install`, start a development server:
+Once you've installed dependencies with `npm install`, start a development server:
 
 ```bash
-pnpm run dev
+npm run dev
 
 # or start the server and open the app in a new browser tab
-pnpm run dev -- --open
+npm run dev -- --open
 ```
 
 ## Building
@@ -24,7 +25,24 @@ pnpm run dev -- --open
 To create a production version of your app:
 
 ```bash
-pnpm run build
+npm run build
 ```
 
 You can preview the production build with `npm run preview`.
+
+## Project Structure
+
+- `src/routes`: Contains the application routes and page logic.
+- `src/lib`: Shared components and utilities.
+- `static`: Static assets.
+
+## Project Flow
+
+This project uses a file-based CMS approach:
+
+1.  **Content**: Blog posts are created as Markdown files in `src/routes/blog/posts/`. Each file contains frontmatter (metadata like title, date) and the post content.
+2.  **Data Retrieval**: The `src/lib/posts.js` utility scans the posts directory using Vite's `import.meta.glob`. It parses the frontmatter to build a list of post objects.
+3.  **Server-Side Rendering**: 
+    -   `src/routes/blog/+page.server.js` calls `getPosts()` to fetch all posts for the blog index.
+    -   `src/routes/+page.server.js` fetches posts and filters for the 3 most recent ones for the homepage.
+4.  **Display**: Svelte pages receive this data via `export let data` and iterate through it to display post summaries or full content.

@@ -1,3 +1,4 @@
+/** Utility for fetching and processing blog posts from markdown files */
 export async function getPosts() {
     let posts = [];
 
@@ -5,6 +6,7 @@ export async function getPosts() {
 
     for (const path in paths) {
         const file = paths[path];
+        // Handle both /src/... and relative paths if necessary, though /src/ is standard in SvelteKit
         const slug = path.split('/').at(-1)?.replace('.md', '');
 
         if (file && typeof file === 'object' && 'metadata' in file && slug) {

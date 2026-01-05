@@ -1,3 +1,4 @@
+/** Server-side data loader for the home page */
 import { getPosts } from '$lib/posts';
 
 export async function load() {

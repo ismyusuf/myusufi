@@ -1,3 +1,4 @@
+# Search engine crawler instructions
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:

@@ -1,4 +1,3 @@
-/** Server-side loader for blog layouts, shares post summaries */
 import { getPosts } from '$lib/posts';
 
 export async function load() {
@@ -7,7 +6,7 @@ export async function load() {
         summaries: posts.map((post) => ({
             slug: post.slug,
             title: post.title,
-            date: post.publishedAt
+            date: post.publishedAt,
         }))
     };
 }

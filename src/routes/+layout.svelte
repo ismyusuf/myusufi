@@ -1,3 +1,4 @@
+<!-- Root layout for all pages, including navigation and footer -->
 <script>
   import '../app.css';
   let { children } = $props();

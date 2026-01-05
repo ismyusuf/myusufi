@@ -1,3 +1,4 @@
+/** Universal loader for individual blog posts based on slug */
 import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {

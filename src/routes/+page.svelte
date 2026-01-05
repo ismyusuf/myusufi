@@ -1,5 +1,6 @@
+<!-- Content template for the home page -->
 <script>
-  let { data } = $props();
+  export let data;
 </script>
 
 <h1 class="mb-8 text-2xl font-semibold tracking-tighter">my portfolio</h1>

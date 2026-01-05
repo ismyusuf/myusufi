@@ -1,5 +1,6 @@
+<!-- Blog index page showing list of posts -->
 <script>
-  let { data } = $props();
+  export let data;
 </script>
 
 <h1 class="font-semibold text-2xl mb-8 tracking-tighter">my blog</h1>
