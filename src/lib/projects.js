@@ -8,8 +8,8 @@ export const CLIENT_PROJECTS = [
         link: 'https://invitlee.com/'
     },
     {
-        title: 'Invitlee',
-        date: 'Dec 2025 - Present',
+        title: 'Sistem Pemberkasan | West Home',
+        date: 'Nov 2025 - Dec 2025',
         description:
             'Sistem manajemen berbasis Laravel 12 + Filament 4 untuk mengelola dokumen pemberkasan dan laporan keuangan multi-perusahaan dengan role-based access control.',
         tech: 'Laravel, MySQL, Filament 4',
@@ -19,8 +19,8 @@ export const CLIENT_PROJECTS = [
 
 export const PERSONAL_PROJECTS = [
     {
-        title: 'DevPortfolio',
-        date: '2024',
+        title: 'Portfolio Website',
+        date: '2025',
         description:
             'A minimalist personal portfolio template built with SvelteKit and Tailwind CSS, focusing on performance, accessibility, and ease of customization for developers.',
         tech: 'SvelteKit, TailwindCSS, Vercel',
