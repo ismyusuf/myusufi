@@ -5,11 +5,10 @@ export const CLIENT_PROJECTS = [
         description:
             'A SaaS platform for creating digital invitations built to be used by printing agencies and registered partners. Serve various invitation templates and allow users to create and share digital invitations.',
         tech: 'Django, SQLite, CI/CD(GIthub Actions), VPS',
-        link: 'https://invitlee.com/'
     },
     {
         title: 'Sistem Pemberkasan | West Home',
-        date: 'Nov 2025 - Dec 2025',
+        date: 'Nov 2025 - Present',
         description:
             'Sistem manajemen berbasis Laravel 12 + Filament 4 untuk mengelola dokumen pemberkasan dan laporan keuangan multi-perusahaan dengan role-based access control.',
         tech: 'Laravel, MySQL, Filament 4',
